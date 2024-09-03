@@ -2,7 +2,7 @@
 
 #include <QMainWindow>
 
-#include <Waveshare.hpp>
+#include <WaveshareLCD.hpp>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -77,7 +77,7 @@ protected slots:
 protected:
 
    // device
-   Waveshare disp_;
+   WaveshareLCD disp_;
 
    // image buffer for Qt drawing
    WsBuffer* imgBuf_;

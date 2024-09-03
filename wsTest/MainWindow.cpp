@@ -3,11 +3,7 @@
 
 #include <QPainter>
 #include <QLinearGradient>
-//#include <QScopedPointer>
-//#include <QPointer>
 #include <QThread>
-
-//#include <stdio.h>
 
 //*****************************************************************************
 //*****************************************************************************
@@ -45,7 +41,7 @@ void MainWindow::handleSetup()
    ui->textEdit->append( "Setup..." );
 
    // set up display
-   if ( disp_.setDevice( Waveshare::WS_LCD_1IN28 ) )
+   if ( disp_.setDevice( WaveshareLCD::WS_LCD_1IN28 ) )
    {
       ui->textEdit->append("  display initialized ");
    }

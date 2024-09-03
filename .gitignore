@@ -35,4 +35,7 @@ Makefile
 .qmake.stash
 .qtc_clangd
 *.user
+moc_*
+ui_*
+wsTest
 
